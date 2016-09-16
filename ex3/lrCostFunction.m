@@ -50,5 +50,4 @@ temp=theta;
 temp(1)=0;
 J=((-y')*log(sigmoid(X*theta))-(1-y)'*log(1-sigmoid(X*theta))+lambda*temp'*temp/2)/m;
 grad=(X'*(sigmoid(X*theta)-y)+lambda*temp)/m;
-grad=grad(:)
 end
